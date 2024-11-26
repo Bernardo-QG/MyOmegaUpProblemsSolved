@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  cin.tie(nullptr);
+  ios_base::sync_with_stdio(false);
+
+  unsigned int N;
+  cin >> N;
+  unsigned int NN;
+  unsigned int M = 2000000;
+  unsigned long int S = 0;
+ 
+
+  for(unsigned int i = 0; i < N; i++){
+    cin >> NN;    
+    if(NN<M) {
+      M = NN;
+    } 
+    S += NN;
+  }
+
+
+  cout << S-M ; 
+  
+
+
+  return 0;
+}

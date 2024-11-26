@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+int K;
+int main() {
+  cin >> K; cout << (K%2==0 && K>=3?"SI":"NO");
+}
+

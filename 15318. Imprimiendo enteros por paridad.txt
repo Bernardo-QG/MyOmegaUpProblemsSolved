@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  cin.tie(nullptr);
+  ios_base::sync_with_stdio(false);
+
+  int N;
+  cin >> N;
+  int  NN[N];
+  for(int i = 0; i < N; i++){
+    cin >> NN[i];    
+  }
+  int P;
+  cin >> P;
+
+  int F = 0;
+
+  for(int i = 0; i < N; i++){
+    if(((NN[i]%2)==0 && P==0) || (((NN[i]+1)%2)==0 && P==1)) {
+      cout << (F == 1?" ":"") << NN[i] ; 
+      F = 1;
+    }      
+  }
+
+
+
+  return 0;
+}
